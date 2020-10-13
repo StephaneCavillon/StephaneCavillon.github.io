@@ -1,14 +1,15 @@
 html, body{
-    /* width:100%; */
+    margin: 0;
+    width:100%;
 }
 
 /* Début Titre et Header */
 header{
-    position: relative;
-    /* overflow: hidden; */
     /* background-color: blue; */
+    position: relative;
+    overflow: hidden;
     width:100%;
-    height: 500px;
+    height: 383px;
 }
 
 #background_titre{
@@ -18,9 +19,10 @@ header{
     z-index: 1;
     width: 100%;
     /* height:500px; */
-    border-right: 50vh solid  transparent;
-    border-left: 100vw solid #484848;
-    border-bottom: 50vh solid  transparent;
+    /* largeur du trapèze */
+    border-left: 280vw solid #484848;
+    /* Hauteur du trapèze */
+    border-bottom: 35vh solid  transparent;
 }
 .header_content{
     display:flex
@@ -30,18 +32,27 @@ header{
     position: absolute;
     top: 0px; left:4vw;
     z-index: 2;
-    color:#4bb1f5 ;
+    width: 66%;
+    color:#045a94 ;
     font-size: 50px;
-    font-family: 'Cinzel', serif;
-    text-shadow: 10px 13px 7px black;
-    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 10px 13px 7px #212020;
     text-align: center;
 }
 
 #photo{
     position: absolute;
-    top
-    z-index: 2;
+    top: 1vh; right: 2vw;
+    z-index:2;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    box-shadow: 6px 6px 20px #045a94 ;
 }
 /* Fin Titre et Header */
 
+/* Début image triathlon */
+#image_triathlon{
+    width: 80%;
+    position: absolute;
+    top: 25vh; left:0vw;
+}
