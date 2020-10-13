@@ -68,7 +68,7 @@ header {
 
 /* Fin Titre et Header */
 
-body>section {
+#fond_page {
     width: 100%;
     height: 100%;
 }
@@ -89,7 +89,8 @@ main{
     width: 80%;
     height: 100%;
 }
-main section{
+
+.MainSection{
     width: 100%;
     height: 42%;
 }
@@ -122,10 +123,10 @@ main section{
 }
 
 /* ligne de séparation entre les compétences */
-.vertical_line{
+.vertical_line1{
     background:linear-gradient(to right,#212020, #045a94, #212020) ;
     width:0.6%;
-    height: 30%;
+    height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
 }
@@ -164,26 +165,58 @@ dt {
     width: 100%;
     height: 100%;
     display: flex;
-    /* justify-content: space-around; */
-
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* bloc carte de la france */
 #frmap{
     background-color: mediumvioletred;
     width: 45%;
     height: 100%;
 }
 
+/* ligne de séparation expérience */
+#vertical_line2{
+    background:linear-gradient(to right,#212020, #045a94, #212020) ;
+    width:0.6%;
+    height: 90%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+/* bloc qui va apparaitre et disparaitre */
 #modal{
     background-color: rgb(255, 255, 14);
     width: 45%;
     height: 100%;
 }
 
-/* #highline{
+/* ligne avec date et logo */
+#highline{
     background-color: orange;
     display:flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 10%;
-} */
+    height: 20%;
 
+}
+
+#date{
+    background-color: orangered;
+    width: 20%;
+    height: 90%;
+}
+
+#logo{
+    background-color: palevioletred;
+    width: 20%;
+    height: 90%;
+}
+
+#description{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 80%;
+}
