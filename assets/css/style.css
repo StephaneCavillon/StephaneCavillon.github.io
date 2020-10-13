@@ -69,7 +69,7 @@ header {
 /* Fin Titre et Header */
 
 main {
-    width: 78%;
+    width: 80%;
 }
 
 section {
@@ -87,20 +87,24 @@ section {
 
 /* Fin d'image triathlon */
 
+main{
+    position:relative;
+    top:75vh;
+}
+
 #separator {
     position: relative;
-    top: 75vh;
-    /* background-color: #045a94; */
+    z-index: 10;
     width: 105%;
     height: 10vh;
-    z-index: 10;
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
     background: linear-gradient(#212020, #045a94, 90%, #212020)
 }
 
 /* Bloc Compétences */
-#skill {
-    background-color: aqua;
+#skills{
+    background-color: #dbdbdb;
+    padding-top: 10px;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -108,7 +112,7 @@ section {
 
 #skill_column {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
 }
 
