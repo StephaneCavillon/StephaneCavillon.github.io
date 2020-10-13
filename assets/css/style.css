@@ -68,12 +68,9 @@ header {
 
 /* Fin Titre et Header */
 
-main {
-    width: 80%;
-}
-
-section {
-    width: 100%
+body>section {
+    width: 100%;
+    height: 100%;
 }
 
 /* Début image triathlon */
@@ -89,7 +86,12 @@ section {
 
 main{
     position:relative;
-    top:75vh;
+    width: 80%;
+    height: 100%;
+}
+main section{
+    width: 100%;
+    height: 42%;
 }
 
 #separator {
@@ -105,22 +107,25 @@ main{
 #skills{
     background-color: #dbdbdb;
     padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
     text-align: center;
     width: 100%;
     height: 100%;
 }
 
 #skill_column {
+    padding-top: 15px;
     display: flex;
     justify-content: space-around;
-    height: 100%;
+    height: 50%;
 }
 
 /* ligne de séparation entre les compétences */
 .vertical_line{
     background:linear-gradient(to right,#212020, #045a94, #212020) ;
     width:0.6%;
-    height: 30vh;
+    height: 30%;
     border: 1px solid transparent;
     border-radius: 50%;
 }
@@ -145,3 +150,40 @@ dt {
 .NotAcquired{
     color: lightslategrey;
 }
+
+/* bloc expérience et formation */
+#experience{
+    background-color: mediumpurple;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#popup{
+    background-color: mediumseagreen;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+
+}
+
+#frmap{
+    background-color: mediumvioletred;
+    width: 45%;
+    height: 100%;
+}
+
+#modal{
+    background-color: rgb(255, 255, 14);
+    width: 45%;
+    height: 100%;
+}
+
+/* #highline{
+    background-color: orange;
+    display:flex;
+    width: 100%;
+    height: 10%;
+} */
+
