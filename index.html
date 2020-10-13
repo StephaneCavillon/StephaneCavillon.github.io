@@ -12,7 +12,7 @@
 
     <!-- icone Font Awesome -->
     <script src="https://kit.fontawesome.com/431fe9efdf.js" crossorigin="anonymous"></script>
-    
+
     <title>CV Numérique - Stéphane CAVILLON - Dev Web/Web Mobile - Amiens</title>
 </head>
 
@@ -20,23 +20,164 @@
 
     <!-- Début titre du CV -->
     <header>
-        <div id="background_titre"></div>
-        <div class="contenu_header">
-            <h1 id="titre_cv">Stéphane CAVILLON <br />
-            Developpeur Web et Web Mobile</h1>
-            <div><img id="photo" src="assets/img/photo_moi2.JPG" alt="Photo Stéphane CAVILLON" width="250"></div>
+        <div id="background_header"></div>
+        <div class="header_content">
+            <div id="titre_cv">
+                <h1>Stéphane CAVILLON <br />
+                    Developpeur Web et Web Mobile</h1>
+            </div>
+            <div id="taille_photo">
+                <img id="photo" src="assets/img/photo_moi2.JPG" alt="Photo Stéphane CAVILLON">
+            </div>
         </div>
     </header>
     <!-- Fin titre du CV -->
 
-    
+
     <main>
 
         <!-- Début image triathlon -->
-        <section>
-            <img id="image_triathlon" src="assets/img/image_triathlon.jpg" alt="Image noir et blanc de deux nageur">
-        </section>
+        <!-- <section>
+            <img id="image_triathlon" src="assets/img/image_triathlon.jpg" alt="Image noir et blanc de trois athlètes">
+        </section> -->
+        <!-- Fin image triathlon -->
+
         <div id="separator"></div>
+
+        <!-- Début bloc Compétences -->
+        <section>
+
+            <!-- Bloc Compétences -->
+            <div id="skills">
+                <h2>Compétences</h2>
+                <div id="skill_column">
+
+                <!-- Colonne Outils -->
+                    <div class="tool">
+                        <dl>
+                            <dt>Outils :</dt>
+                                <dd><i class="fa fa-terminal fa-lg"></i>Ligne de commande
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                </dd>
+                                <dd><i class="fa fa-terminal fa-lg"></i>Nano
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                </dd>
+                                <dd><i class="fa fa-github-alt fa-lg"></i>Github
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                </dd>
+                                <dd><i class="fa fa-trello fa-lg"></i>Trello
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg"></i>
+                                    <i class="fa fa-running fa-lg NotAcquired"></i>
+                                </dd>
+                        </dl>
+                    </div>
+
+                    <div class="vertical_line"></div>
+
+                    <!-- colonne Langages -->
+                    <div class="langages">
+                        <dl>
+                            <dt>Langages :</dt>
+                            <dd><i class="fab fa-html5 fa-lg"></i>HTML
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fab fa-css3-alt fa-lg"></i>CSS
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fab fa-js-square fa-lg"></i>JavaScript
+                                <i class="fa fa-running NotAcquired fa-lg"></i>
+                                <i class="fa fa-running NotAcquired fa-lg"></i>
+                                <i class="fa fa-running NotAcquired fa-lg"></i>
+                                <i class="fa fa-running NotAcquired fa-lg"></i>
+                                <i class="fa fa-running NotAcquired fa-lg"></i>
+                            </dd>
+                            <dd><i class="fab fa-php fa-lg"></i>PHP
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="vertical_line"></div>
+
+                    <!-- Colonne Génériques -->
+                    <div class="generic">
+                        <dl>
+                            <dt>Génériques :</dt>
+                            <dd><i class="fa fa-project-diagram fa-lg"></i>Management de projet
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fa fa-pen fa-lg"></i>Rédaction de cahier des charges
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fa fa-cogs fa-lg"></i>Support à la production
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fa fa-eye fa-lg"></i>Veille technologique et règlementaire
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fa fa-hands-helping fa-lg"></i>Relationnel technique clients et fournisseurs
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                            <dd><i class="fa fa-atom fa-lg"></i>R&D Chimie de formulation
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg"></i>
+                                <i class="fa fa-running fa-lg NotAcquired"></i>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin du bloc Compétences -->
+        </section>
     </main>
     <!-- Début aside -->
     <aside>
@@ -56,4 +197,3 @@
 </body>
 
 </html>
-

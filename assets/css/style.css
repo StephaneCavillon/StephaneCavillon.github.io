@@ -1,70 +1,143 @@
-html, body{
+html,
+body {
     margin: 0;
-    width:100%;
+    width: 100%;
+    height: 100%
 }
 
 /* Début Titre et Header */
-header{
+header {
     /* background-color: blue; */
     position: relative;
     overflow: hidden;
-    width:100%;
-    height: 383px;
+    width: 100%;
+    height: 46%;
+    /* 46vh; */
 }
 
-#background_titre{
+#background_header {
     /* background-color: green; */
-    position:absolute;
-    top:0; left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 100%;
     /* height:500px; */
     /* largeur du trapèze */
     border-left: 280vw solid #484848;
     /* Hauteur du trapèze */
-    border-bottom: 35vh solid  transparent;
+    border-bottom: 35vh solid transparent;
 }
-.header_content{
-    display:flex
+
+.header_content {
+    display: flex;
 }
-#titre_cv{
-    /* background: blue; */
+
+#titre_cv {
+    /* background: green; */
     position: absolute;
-    top: 0px; left:4vw;
+    top: 0px;
+    left: 4vw;
     z-index: 2;
     width: 66%;
-    color:#045a94 ;
-    font-size: 50px;
+    color: #045a94;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 10px 13px 7px #212020;
     text-align: center;
 }
 
-#photo{
+#taille_photo {
+    /* background-color: blue; */
     position: absolute;
-    top: 1vh; right: 2vw;
-    z-index:2;
+    top: 2vh;
+    right: 0.5%;
+    z-index: 2;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+#photo {
+    margin-top: 2%;
+    height: 85%;
     border: 0px solid transparent;
     border-radius: 50%;
-    box-shadow: 6px 6px 20px #045a94 ;
+    box-shadow: 6px 6px 20px #045a94;
 }
+
 /* Fin Titre et Header */
 
-/* Début image triathlon */
-#image_triathlon{
-    width: 80%;
-    position: absolute;
-    top: 25vh; left:0vw;
-    z-index:0;
+main {
+    width: 78%;
 }
 
-#separator{
-    position:relative;
-    top:65vh;
+section {
+    width: 100%
+}
+
+/* Début image triathlon */
+#image_triathlon {
+    width: 80%;
+    position: absolute;
+    top: 25vh;
+    left: 0vw;
+    z-index: 0;
+}
+
+/* Fin d'image triathlon */
+
+#separator {
+    position: relative;
+    top: 75vh;
     /* background-color: #045a94; */
-    width: 100%;
+    width: 105%;
     height: 10vh;
     z-index: 10;
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
-    background: linear-gradient(#212020,#045a94, 90%,#212020)
+    background: linear-gradient(#212020, #045a94, 90%, #212020)
+}
+
+/* Bloc Compétences */
+#skill {
+    background-color: aqua;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#skill_column {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* ligne de séparation entre les compétences */
+.vertical_line{
+    background:linear-gradient(to right,#212020, #045a94, #212020) ;
+    width:0.6%;
+    height: 30vh;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.tool,
+.langages,
+.generic {
+    text-align: center;
+    line-height: 2;
+}
+
+dt {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Mise en forme des icones */
+.fa-lg{
+    padding-right:4px;
+}
+
+.NotAcquired{
+    color: lightslategrey;
 }
