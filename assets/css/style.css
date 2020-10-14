@@ -1,5 +1,6 @@
 html,
 body {
+    background-color: #000000;
     margin: 0;
     width: 100%;
     height: 100%
@@ -100,7 +101,7 @@ main{
 #separator {
     position: relative;
     z-index: 6;
-    width: 105%;
+    width: 100%;
     height: 10vh;
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
     background: linear-gradient(#212020, #045a94, 90%, #212020)
@@ -109,7 +110,8 @@ main{
 /* Bloc Compétences */
 #skills{
     background-color: #dbdbdb;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -120,6 +122,7 @@ main{
     padding-top: 15px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 50%;
 }
 
@@ -254,7 +257,7 @@ dt {
 aside{
     background-color:#000000 ;
     color: #045a94;
-    position:fixed;
+    position:absolute;
     right:0px; top:0px;
     z-index: 7;
     width:20%;
@@ -264,6 +267,43 @@ aside{
 #about{
     background-color: orangered;
     position:relative;
-    top:370px;
+    top:320px;
+}
 
+nav{
+    width: 80%;
+    height: 60%;
+}
+
+/* bloc qui va être fixe sur la page */
+#drifter{
+    background-color: palegreen;
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    top:480px;
+}
+
+#drift_layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#sommaire{
+    background-color: peru;
+    width: 100%;
+    height: 60%;
+    /* position:relative;
+    top:0px; */
+}
+
+#social{
+    background-color: pink;
+    width: 100%;
+    height: 10%;
+    /* position: relative;
+    bottom:0px; */
 }
