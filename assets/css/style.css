@@ -38,7 +38,6 @@ header {
 }
 
 #titre_cv {
-    /* background: green; */
     position: absolute;
     top: 0px;
     left: 4vw;
@@ -52,7 +51,6 @@ header {
 }
 
 #taille_photo {
-    /* background-color: blue; */
     position: absolute;
     top: 2vh;
     right: 0.5%;
@@ -89,8 +87,6 @@ header {
 /* Fin d'image triathlon */
 
 main{
-    /* display:flex;
-    flex-direction: column; */
     position:relative;
     top:30vh;
     width: 80%;
@@ -175,7 +171,7 @@ dt {
     z-index: 8;
     text-align: center;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;}
 
 #popup{
@@ -199,14 +195,12 @@ dt {
     background-color: purple;
     width: 10px;
     height: 10px;
-    /* position: relative;
-    z-index: 8; */
     border: 1px solid grey;
     border-radius: 50%;
 }
 
 /* placement des points */
-.amiens{
+#amiens{
     position: absolute;
     top:155px; left: 325px;
 }
@@ -225,35 +219,38 @@ dt {
     background-color: #045a94;
     width: 45%;
     height: 80%;
-    border: 2px groove #045a94;
+    border: 4px solid #045a94;
+    border-radius: 10%;
+    background: radial-gradient(#045a94, #484848)
 }
-
 
 
 /* ligne avec date et logo */
 #highline{
     /* background-color: orange; */
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15%;
+    height: 10%;
 
 }
 
-#date{
+#lieu{
     /* background-color: orangered; */
     width: 45%;
     height: 90%;
     justify-content: center;
     align-items: center;
     font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #logo{
     /* background-color: palevioletred; */
     width: 30%;
-    height: 90%;
+    height: 30%;
 }
 
 #description{
@@ -262,21 +259,31 @@ dt {
     height: 85%;
     text-align: left;
     padding-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bloc_detail{
+    display:flex;
+    justify-content: space-between;
 }
 
 /* position relative sinon le bloc vient chevaucher le precedent */
 #interet {
-    background-color: mediumaquamarine;
+    background-color: #dbdbdb;
     width: 100%;
     height: 100%;
     position: relative;
     top: 7.5%;
     z-index: 2;
+    text-align: center;
     padding-top: 10px;
+    padding-bottom: 150px;
 }
 
 #bloc_dossier{
-    background-color: mistyrose;
+    /* background-color: mistyrose; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -284,10 +291,26 @@ dt {
     align-items: center;
 }
 
-.dossier{
-    background-color: olivedrab;
+.surdossier{
+    /* background-color: olivedrab; */
     width: 20%;
-    height: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dossier_title{
+    /* background-color: rgb(84, 140, 224); */
+    width: 100%;
+    height: 30%;
+}
+
+.dossier{
+    /* background-color: rgb(42, 53, 19); */
+    width: 100%;
+    height: 80%;
 }
 
 /* barre de menu */
@@ -345,3 +368,4 @@ nav{
     /* position: relative;
     bottom:0px; */
 }
+
