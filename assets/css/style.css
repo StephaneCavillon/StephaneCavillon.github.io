@@ -201,7 +201,7 @@ dt {
 /* placement des points */
 #amiens{
     position: absolute;
-    top:155px; left: 325px;
+    top:155px; left: 385px;
 }
 
 /* ligne de séparation expérience */
@@ -317,7 +317,7 @@ aside{
     background-color:#000000 ;
     color: #045a94;
     position:absolute;
-    right:0px; top:0px;
+    right:0px; top:70px;
     z-index: 7;
     width:20%;
     height:90%;
@@ -341,7 +341,7 @@ nav{
     width: 20%;
     height: 30%;
     position: fixed;
-    top:480px; right:0px;
+    top:580px; right:0px;
     z-index: 40;
 }
 
