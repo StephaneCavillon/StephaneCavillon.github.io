@@ -15,16 +15,18 @@
     <!-- feuille de style complémentaire -->
     <link rel="stylesheet" href="assets/css/styleresponsive.css">
 
-    <title>CV Numérique - Stéphane CAVILLON - Dev Web/Web Mobile - Amiens</title>
+    <title>CV Numérique - Stéphane CAVILLON - Dev Web/Web Mobile - Amiens - Somme</title>
 </head>
 
 <body>
     <main class="container-fluid bg-dark">
-    <!-- fond gris header -->
-       <header class="row bg-secondary" id="fond_header">
+        
+    <!-- row haut de page -->
+           <header class="row bg-secondary" id="fond_header">
                     <!-- titre CV -->
                     <h1 class="bg-primary col-12 col-md-12" id="cvtitle">titre CV</h1>
 
+            <!-- Margin pour passer en dessous du titre du CV -->
                     <div class="col-12 col-md-9 mt-md-5">
                         <div class="row">
 
@@ -40,23 +42,27 @@
                     </div>
 
                     <!-- section à propos -->
-                    <div class="bg-dark col-12 col-md-3" id="about">
-                        <div class="" id="photomoi">photo</div>
-                        <div class="" id="textabout">
-                            <h2>A propos</h2>
-                            <div> Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nam eleifendjusto eget ex
-                                molestie eleifend. Quisque necsollicitudin nibh. Pellentesquehabitantmorbi tristique
-                                senectus et netus et malesuada famesac turpis egestas. Phasellus nonnibh  scelerisque velit
-                                euismod placerat eu eu mi. Aliquam etelit  nec tellusultricies scelerisqueeu.
+            <!-- Margin pour passer en dessous de la photo -->
+                        <div class="bg-dark col-12 col-md-3" id="about">
+                            <div class="" id="photomoi">photo</div>
+                            <div class="" id="textabout">
+                                <h2>A propos</h2>
+                                <div> Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nam eleifendjusto eget ex
+                                    molestie eleifend. Quisque necsollicitudin nibh. Pellentesquehabitantmorbi tristique
+                                    senectus et netus et malesuada famesac turpis egestas. Phasellus nonnibh  scelerisque velit
+                                    euismod placerat eu eu mi. Aliquam etelit  nec tellusultricies scelerisqueeu.
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <!-- fin de section à propos -->
-        </header>
+            </header>
 
-<!-- Début Bloc Compétences -->
-        <section class="row" id="skills">  
-                <div class="col-12 col-md-9 bg-info" >
+    <!-- row bas de page -->
+        <div class="row">
+            <div class="col-12 col-md-9">
+             <!-- Début Bloc Compétences -->
+                     <section class="row bg-info" id="skills">  
+                        <div class="col-12 col-md-12 bg-info" >
                             <h2>Compétences</h2>
                             <div class="row">
                                 <!-- Début colonne Outils -->
@@ -84,55 +90,64 @@
                                 </div>
                                 <!-- Fin colonne Génériques -->
                             </div>
-
-                </div>
+                        </div>
 
                 <!-- Bloc complémentaire de la ligne -->
                 <!-- <div class="bg-dark col-12 col-md-3"></div> -->
-        </section>  
-<!-- Fin du bloc Compétences -->
+                     </section>  
+            <!-- Fin du bloc Compétences -->
 
-<!-- Début bloc expériences et formations -->
-        <section class="row" id="xp">
-                <div class="col-12 col-md-9 bg-secondary">
-                    <h2>Diplômes et expériences</h2>
-                    <div class="row">
-                        <div class="col-12"> carte de la france et puce aux lieux de formations/expériences</div>
+            <!-- Début bloc expériences et formations -->
+                    <section class="row bg-secondary" id="xp">
+                         <div class="col-12 col-md-12 bg-secondary">
+                             <h2>Diplômes et expériences</h2>
+                             <div class="row">
+                                 <div class="col-12"> carte de la france et puce aux lieux de formations/expériences</div>
 
-                        <!-- Bouton pour les modals/collapse à placer sur la carte en absolue /!\ penser aux parents en relative -->
-                        <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Amiens</button> -->
-                        <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Laon</button> -->
-                        <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Compiègne</button> -->
-                        <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Lyon</button> -->
-                        <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Reims</button> -->
-                    </div>
+                                 <!-- Bouton pour les modals/collapse à placer sur la carte en absolue /!\ penser aux parents en relative -->
+                                 <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Amiens</button> -->
+                                 <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Laon</button> -->
+                                 <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Compiègne</button> -->
+                                 <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Lyon</button> -->
+                                 <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Reims</button> -->
+                             </div>
+                         </div>
+                    </section>
+            <!-- Fin du bloc Expériences et formations -->
+
+            <!-- Début du bloc centres d'intérêts -->
+                    <section class="row" id="interet">
+                        <div class="col-12 col-md-12 bg-info">
+                            <h2>Centres d'intérêts</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <h3>Triathlon</h3>
+                                    <!-- caroussel triathlon -->
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h3>Musique</h3>
+                                    <!-- caroussel Musique -->
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h3>Modélisme</h3>
+                                    <!-- caroussel Modélisme -->
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </section>
+            <!-- Fin du bloc centres d'intérêts -->
+            </div>
+
+            <!-- Début bloc contact -->
+                <div class="col-12 col-md-3 bg-primary">
+                    <footer class="" id="contact">
+                        <div class="text-white">contact</div>
+                        <!-- icone avec les coordonnées en collapse -->
+                    </footer>
                 </div>
-        </section>
-<!-- Fin du bloc Expériences et formations -->
-
-<!-- Début du bloc centres d'intérêts -->
-        <section class="row" id="interet">
-                <div class="col-12 col-md-9 bg-info">
-                    <h2>Centres d'intérêts</h2>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <h3>Triathlon</h3>
-                            <!-- caroussel triathlon -->
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h3>Musique</h3>
-                            <!-- caroussel Musique -->
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h3>Modélisme</h3>
-                            <!-- caroussel Modélisme -->
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-<!-- Fin du bloc centres d'intérêts -->
-
+            <!-- Fin bloc contact -->
+        </div>
 
 
     </main>
