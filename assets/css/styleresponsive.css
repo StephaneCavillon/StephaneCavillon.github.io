@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+
+    #cvtitle{
+        position: absolute;
+        z-index:2;
+        margin-bottom: 0;
+
+    }
+
+    #about{
+        position: relative;
+    }
+
+    #photomoi{
+        position:relative;
+        z-index:3;
+    }
+
+    #textabout{
+        margin-top: 50px
+
+    }
+}
