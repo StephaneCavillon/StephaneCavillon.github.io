@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     #cvtitle{
         position: absolute;
@@ -22,7 +22,7 @@
     }
 
     #textabout{
-        margin-top: 50px
+        margin-top: 50px;
 
     }
 }
@@ -35,11 +35,22 @@
     margin-bottom:0;
 
 }
+
+
 #about{
     background-color: #000000;
 }
 
 #textabout{
 color:#045a94;
+}
 
+
+/* Bloc compétences */
+#skills{
+    background-color:#dbdbdb;
+}
+
+.NotAcquired{
+    color: grey;
 }
