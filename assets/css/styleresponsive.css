@@ -4,6 +4,7 @@
         position: absolute;
         z-index:2;
         margin-bottom: 0;
+        padding-right: 20%;
 
     }
 
@@ -17,7 +18,7 @@
     }
 
     #textabout{
-        margin-top: 50px
+        /* margin-top: 50px */
 
     }
 }
