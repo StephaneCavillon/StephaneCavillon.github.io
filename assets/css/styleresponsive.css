@@ -8,6 +8,10 @@
 
     }
 
+    #photo_triathlon{
+        margin-top: 3%;
+    }
+
     #about{
         position: relative;
     }
@@ -18,7 +22,24 @@
     }
 
     #textabout{
-        /* margin-top: 50px */
+        margin-top: 50px
 
     }
+}
+
+#cvtitle{
+    background-color: #484848;
+    color:#045a94;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 10px 13px 7px #212020;
+    margin-bottom:0;
+
+}
+#about{
+    background-color: #000000;
+}
+
+#textabout{
+color:#045a94;
+
 }
