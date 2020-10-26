@@ -42,7 +42,7 @@
                 <!-- section à propos -->
             <!-- Margin pour passer en dessous de la photo -->
                 <div class="col-12 col-lg-3 pt-2 text-center" id="about">
-                            <img class="rounded-circle h-50" id="photomoi" src="assets/img/photo_moi2.jpg" alt="Photo de Stéphane CAVILLON">
+                            <img class="rounded-circle" id="photomoi" src="assets/img/photo_moi2.jpg" alt="Photo de Stéphane CAVILLON">
                             <div class="pb-4" id="textabout">
                                 <h2>A propos</h2>
                                 <div> Titulaire d'un diplôme d'ingénieur en chimie de formulation, après 8 ans d'expériences j'ai choisi de me réorienter dans le domaine du numérique. Il s'agit d'un secteur dynamique et en plein essor dans lequel il faut chaque jour s'adapter et apprendre. Je suis ainsi certain de ne pas m'ennuyer et de m'améliorer en continu.
@@ -195,18 +195,59 @@
             <!-- Fin du bloc Compétences -->
 
             <!-- Début bloc expériences et formations -->
-                <section class="row bg-secondary" id="xp">
-                     <div class="col-12 col-lg-12 bg-secondary">
-                         <h2>Diplômes et expériences</h2>
+                <section class="row" id="xp">
+                     <div class="col-12 col-lg-12 text-white">
+                         <h2 class="text-center">Diplômes et expériences</h2>
                          <div class="row">
-                             <div class="col-12"> carte de la france et puce aux lieux de formations/expériences</div>
+                             <div class="col-12 col-lg-6">
+                                <img src="assets/img/france_fond_de_carte.png" alt="carte de la france avec    des points sur différentes villes" class="col-12">
+                                
 
-                             <!-- Bouton pour les modals/collapse à placer sur la carte en absolue /!\ penser aux parents en relative -->
-                             <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Amiens</button> -->
-                             <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Laon</button> -->
-                             <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Compiègne</button> -->
-                             <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Lyon</button> -->
-                             <!-- <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#"> Reims</button> -->
+                                <!-- Bouton pour les modals/collapse à placer sur la carte en absolue /!\  penser aux parents en relative -->
+                                <!-- <button type="button" class=" btn btn-primary" data-toggle="modal"    data-target="#"> Amiens</button> -->
+                                <!-- <button type="button" class=" btn btn-primary" data-toggle="modal"    data-target="#"> Laon</button> -->
+                                <!-- <button type="button" class=" btn btn-primary" data-toggle="modal"    data-target="#"> Compiègne</button> -->
+                                <!-- <button type="button" class=" btn btn-primary" data-toggle="modal"    data-target="#"> Lyon</button> -->
+                                <!-- <button type="button" class=" btn btn-primary" data-toggle="modal"    data-target="#"> Reims</button> -->
+                            </div>
+
+<!-- Passer cette partie dans une carte -->
+                            <div class="col-12 col-lg-6" id="Amiens">
+
+                                <!-- Ligne Tiamat -->
+                                <div class="row">
+                                    <div class="col-8">
+                                    <!-- Tiamat -->
+                                        <h3>Novembre 2018 - Juillet 2020 - Tiamat</h3>
+                                        <p><strong>Ingénieur Formulation (CDI)</strong></p>
+                                        <ul>
+                                            <li>Développement de batterie à base d'ion sodium</li>
+                                            <li>Veille technologique</li>
+                                            <li>Reporting lors de réunions de collaboration avec l'université</li>
+                                        </ul>
+                                    </div>
+                                        <img src="assets/img/tiamat_lg.png" alt="Logo Tiamat" class="col-4 h-25">
+                                </div>
+
+                                    <!-- Cipélia -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h4>Mars 2014 - Juillet 2018 - Cipélia</h4>
+                                        <p><strong>Chef de projet formulation (CDI)</strong></p>
+                                        <ul>
+                                            <li>Optimisation des coûts de formules</li>
+                                            <li>Homologation/Rationalisation des matières premières</li>
+                                            <li>Management d'une équipe de 2 personnes</li>
+                                            <li>Participation et Certification ISO 9001:2015</li>
+                                            <li>Support technique aux filiale de la marque</li>
+                                            <li>Formation technique des clients de filiales en France et à l'étranger</li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/img/cipelia_lg.png" alt="Logo de Cipélia" class="col-4">
+                                </div>
+
+                            </div>
+
                          </div>
                      </div>
                 </section>

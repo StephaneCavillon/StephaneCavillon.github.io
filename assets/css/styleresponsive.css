@@ -9,7 +9,7 @@
     }
 
     #photo_triathlon{
-        margin-top: 3%;
+        margin-top: 60px;
     }
 
     #about{
@@ -41,6 +41,10 @@
     background-color: #000000;
 }
 
+#photomoi{
+ height: 300px;
+}
+
 #textabout{
 color:#045a94;
 }
@@ -53,4 +57,9 @@ color:#045a94;
 
 .NotAcquired{
     color: grey;
+}
+
+/* bloc expériences */
+#xp{
+    background-color: #373636 ;
 }
