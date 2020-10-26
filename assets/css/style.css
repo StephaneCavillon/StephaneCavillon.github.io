@@ -1,388 +1,120 @@
-html{
-    height: 100%;
+main{
+    background-color:#dbdbdb;
 }
 
-body {
-    background-color: #000000;
-    margin: 0;
-    width: 100%;
-    height: 100%
-}
 
-/* Début Titre et Header */
-header {
-    /* background-color: blue; */
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 46%;
-    /* 46vh; */
-}
-
-#background_header {
-    /* background-color: green; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 8;
-    width: 100%;
-    /* largeur du trapèze */
-    border-left: 280vw solid #484848;
-    /* Hauteur du trapèze */
-    border-bottom: 35vh solid transparent;
-}
-
-.header_content {
-    display: flex;
-}
-
-#titre_cv {
-    position: absolute;
-    top: 0px;
-    left: 4vw;
-    z-index: 9;
-    width: 66%;
-    color: #045a94;
-    font-size: 30px;
+#cvtitle{
+    background-color: #484848;
+    color:#045a94;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 10px 13px 7px #212020;
-    text-align: center;
+    margin-bottom:0;
+
 }
 
-#taille_photo {
-    position: absolute;
-    top: 2vh;
-    right: 0.5%;
-    z-index: 10;
-    width: 20%;
-    height: 100%;
-    text-align: center;
+.black{
+    background-color: #000000;
 }
 
-#photo {
-    margin-top: 2%;
-    height: 85%;
-    border: 0px solid transparent;
-    border-radius: 50%;
-    box-shadow: 6px 6px 20px #045a94;
+#photomoi{
+ height: 300px;
 }
 
-/* Fin Titre et Header */
-
-#fond_page {
-    width: 100%;
-    height: 45%;
+#textabout{
+color:#045a94;
 }
 
-/* Début image triathlon */
-#image_triathlon {
-    width: 80%;
-    position: absolute;
-    top: 25vh;
-    left: 0vw;
-    z-index: 0;
-}
-
-/* Fin d'image triathlon */
-
-main{
-    position:relative;
-    top:30vh;
-    width: 80%;
-    height: 100%;
-}
-
-.MainSection{
-    width: 100%;
-    height: 42%;
-}
-
-.MainSection2{
-    width: 100%;
-    height: 85%;
-}
-
-#separator {
-    position: relative;
-    z-index: 6;
-    width: 100%;
-    height: 10vh;
+#fond_nav{
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
     background: linear-gradient(#212020, #045a94, 90%, #212020)
 }
 
-/* Bloc Compétences */
-#skills{
-    background-color: #dbdbdb;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+#fond_nav a{
+    color:white;
+    text-shadow: 4px 5px 2px #000000;
 }
 
-#skill_column {
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%;
-}
-
-/* ligne de séparation entre les compétences */
-.vertical_line1{
-    background:linear-gradient(to right,#212020, #045a94, #212020) ;
-    width:0.6%;
-    height: 100%;
-    border: 1px solid transparent;
-    border-radius: 50%;
-}
-
-.tool,
-.langages,
-.generic {
-    text-align: center;
-    line-height: 2;
-}
-
-dt {
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-/* Mise en forme des icones */
-.fa-lg{
-    padding-right:4px;
-}
+/* Bloc compétences */
 
 .NotAcquired{
-    color: lightslategrey;
+    color: grey;
 }
 
-/* bloc expérience et formation */
-#experience{
-    background-color: #373636;
-    color: white;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 8;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 2%;
+/* bloc expériences */
+#xp{
+    background-color: #373636 ;
     box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
+
 }
 
-#popup{
-    /* background-color: mediumseagreen; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#map{
+    position:relative;
 }
 
-/* bloc carte de la france */
-#frmap{
-    /* background-color: mediumvioletred; */
-    width: 45%;
-    height: 100%;
-}
-
-/* mise en forme du point */
 .point{
-    background-color: purple;
-    width: 10px;
-    height: 10px;
-    border: 1px solid grey;
-    border-radius: 50%;
+    position:absolute;
+    top:35px;
+    left:190px;
+    font-size: 10px;
 }
 
-/* placement des points */
-#amiens{
-    position: absolute;
-    top:155px; left: 385px;
-}
-
-/* ligne de séparation expérience */
-#vertical_line2{
-    background:linear-gradient(to right,#212020, #045a94, #212020) ;
-    width:0.6%;
-    height: 80%;
-    border: 1px solid transparent;
-    border-radius: 50%;
-}
-
-/* bloc qui va apparaitre et disparaitre */
-.modal{
-    background-color: #045a94;
-    width: 45%;
-    height: 80%;
+#Amiens{
+    padding:5px;
     border: 4px solid #045a94;
     border-radius: 10%;
     background: radial-gradient(#045a94, #484848)
 }
 
-
-/* ligne avec date et logo */
-#highline{
-    /* background-color: orange; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10%;
-
-}
-
-#lieu{
-    /* background-color: orangered; */
-    width: 45%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#logo{
-    /* background-color: palevioletred; */
-    width: 30%;
-    height: 30%;
-}
-
-#description{
-    /* background-color: rebeccapurple; */
-    width: 99%;
-    height: 85%;
-    text-align: left;
-    padding-left: 1%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.bloc_detail{
-    display:flex;
-    justify-content: space-between;
-}
-
-/* position relative sinon le bloc vient chevaucher le precedent */
-#interet {
-    background-color: #dbdbdb;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 7.5%;
-    z-index: 2;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 150px;
-}
-
-#bloc_dossier{
-    /* background-color: mistyrose; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.surdossier{
-    /* background-color: olivedrab; */
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.dossier_title{
-    /* background-color: rgb(84, 140, 224); */
-    width: 100%;
-    height: 30%;
-}
-
-.dossier{
-    /* background-color: rgb(42, 53, 19); */
-    width: 100%;
-    height: 80%;
-}
-
-/* barre de menu */
-aside{
-    background-color:#000000 ;
-    color: #045a94;
-    position:absolute;
-    right:0px; top:70px;
-    z-index: 7;
-    width:20%;
-    height:90%;
-}
-
-#about{
-    /* background-color: orangered; */
+#contact{
+    background-color: #000000;
     position:relative;
-    top:320px;
-    text-align: center;
+    bottom:0;
 }
 
-nav{
-    width: 20%;
-    height: 60%;
+/* Début média query pour écran desktop */
+@media (min-width: 992px) {
+
+    #cvtitle{
+        position: absolute;
+        z-index:2;
+        margin-bottom: 0;
+        padding-right: 20%;
+
+    }
+
+    #photo_triathlon{
+        margin-top: 60px;
+    }
+
+    #about{
+        position: relative;
+    }
+
+    #photomoi{
+        position:relative;
+        z-index:3;
+    }
+
+    #textabout{
+        margin-top: 20px;
+
+    }
+
+    .point{
+        position:absolute;
+        top:65px;
+        left:320px;
+        /* font-size: 10px; */
+    }
+
+    #contact{
+       position:fixed;
+        bottom:10px;
+        right:0;
+    }
+    
+
+    
 }
 
-/* bloc qui va être fixe sur la page */
-#drifter{
-    /* background-color: palegreen; */
-    width: 20%;
-    height: 30%;
-    position: fixed;
-    top:580px; right:0px;
-    z-index: 40;
-}
-
-#drift_layout{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-#sommaire{
-    /* background-color: peru; */
-    color:white;
-    width: 100%;
-    height: 60%;
-    line-height: 3;
-    /* position:relative;
-    top:0px; */
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-#social{
-    /* background-color: pink; */
-    color:white;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    /* position: relative;
-    bottom:0px; */
-}
-/* test de faire disparaitre le numero de tel */
-/* #tel{
-    opacity:0;
-}
-
-#tel:hover{
-    visibility: visible;
-} */
+/* Fin de la média query pour écran desktop */
