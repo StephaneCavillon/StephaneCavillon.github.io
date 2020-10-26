@@ -71,6 +71,8 @@ color:#045a94;
     bottom:0;
 }
 
+
+
 /* Début média query pour écran desktop */
 @media (min-width: 992px) {
 
@@ -112,8 +114,6 @@ color:#045a94;
         bottom:10px;
         right:0;
     }
-    
-
     
 }
 
