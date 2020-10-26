@@ -25,6 +25,14 @@
         margin-top: 20px;
 
     }
+
+    .point{
+        position:absolute;
+        top:65px;
+        left:320px;
+        /* font-size: 10px; */
+    }
+    
 }
 
 #cvtitle{
@@ -62,7 +70,20 @@ color:#045a94;
 /* bloc expériences */
 #xp{
     background-color: #373636 ;
+    box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
+
 }
+
+#map{
+    position:relative;
+}
+
+/* .point{
+    position:absolute;
+    top:35px;
+    left:190px;
+    font-size: 10px;
+} */
 
 #Amiens{
     padding:5px;

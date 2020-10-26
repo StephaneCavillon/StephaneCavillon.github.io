@@ -171,7 +171,8 @@ dt {
     text-align: center;
     padding-top: 1%;
     padding-bottom: 2%;
-    box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;}
+    box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
+}
 
 #popup{
     /* background-color: mediumseagreen; */
