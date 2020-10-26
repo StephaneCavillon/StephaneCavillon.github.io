@@ -1,3 +1,4 @@
+/* Début média query pour écran desktop */
 @media (min-width: 992px) {
 
     #cvtitle{
@@ -32,8 +33,22 @@
         left:320px;
         /* font-size: 10px; */
     }
+
+    /* Bloc interet */
+
+    .carousel-inner img{
+        margin: auto;
+        height: 750px;
+    }
     
 }
+
+/* Fin de la média query pour écran desktop */
+
+main{
+    background-color:#dbdbdb;
+}
+
 
 #cvtitle{
     background-color: #484848;
@@ -59,9 +74,6 @@ color:#045a94;
 
 
 /* Bloc compétences */
-#skills{
-    background-color:#dbdbdb;
-}
 
 .NotAcquired{
     color: grey;
@@ -91,3 +103,4 @@ color:#045a94;
     border-radius: 10%;
     background: radial-gradient(#045a94, #484848)
 }
+

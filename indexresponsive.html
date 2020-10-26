@@ -57,7 +57,7 @@
             <div class="col-12 col-lg-9">
              <!-- Début Bloc Compétences -->
                  <section class="row" id="skills">  
-                        <div class="col-12 col-lg-12 text-center" >
+                        <div class="col-12 col-lg-12 py-2 text-center" >
                             <h2>Compétences</h2>
                             <div class="row">
                                 <!-- Début colonne Outils -->
@@ -196,7 +196,7 @@
 
             <!-- Début bloc expériences et formations -->
                 <section class="row" id="xp">
-                     <div class="col-12 col-lg-12 text-white ">
+                     <div class="col-12 col-lg-12 my-2 text-white ">
                          <h2 class="text-center">Diplômes et expériences</h2>
                          <div class="row">
                              <div class="col-12 col-lg-6" id="map">
@@ -256,21 +256,52 @@
 
             <!-- Début du bloc centres d'intérêts -->
                     <section class="row" id="interet">
-                        <div class="col-12 col-lg-12 bg-info">
-                            <h2>Centres d'intérêts</h2>
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <h3>Triathlon</h3>
-                                    <!-- caroussel triathlon -->
+                        <div class="col-12 col-lg-12 py-3">
+                            <h2 class="text-center">Centres d'intérêts</h2>
+
+        <!-- Début du caroussel -->
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicateur de slide active -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel" data-slide-to="1"></li>
+                                    <li data-target="#carousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- début contenu du carousel -->
+                                <div class="carousel-inner justify-content-center">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/triatnat.jpg" alt="slide triathlon" class="d-block w-auto center-block">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Le Triathlon</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="assets/img/sax.jpg" alt="slide musique" class="d-block w-auto center-block">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>La Musique</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="assets/img/maquette.jpg" alt="slide maquette" class="d-block w-auto center-block">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Le modèlisme</h5>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    <h3>Musique</h3>
-                                    <!-- caroussel Musique -->
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <h3>Modélisme</h3>
-                                    <!-- caroussel Modélisme -->
-                                </div>
+                                <!-- Fin du contenu du carousel -->
+
+                                <!-- Bouton de déplacement dans le carousel -->
+                                <a href="#carousel" class="carousel-control-prev bg-muted" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Précédente</span>
+                                </a>
+                                <a href="#carousel" class="carousel-control-next bg-muted" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Suivante</span>
+                                </a>
                             </div>
                         
                         </div>
