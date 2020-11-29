@@ -1,120 +1,32 @@
-main{
-    background-color:#dbdbdb;
-}
-
-
-#cvtitle{
-    background-color: #484848;
-    color:#045a94;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 10px 13px 7px #212020;
-    margin-bottom:0;
-
-}
-
-.black{
-    background-color: #000000;
-}
-
-#photomoi{
- height: 300px;
-}
-
-#textabout{
-color:#045a94;
-}
-
-#fond_nav{
-    box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
-    background: linear-gradient(#212020, #045a94, 90%, #212020)
-}
-
-#fond_nav a{
-    color:white;
-    text-shadow: 4px 5px 2px #000000;
-}
-
-/* Bloc compétences */
-
-.NotAcquired{
-    color: grey;
-}
-
-/* bloc expériences */
-#xp{
-    background-color: #373636 ;
-    box-shadow: 0 10px 10px #212020, 0 -10px 10px #212020;
-
-}
-
-#map{
-    position:relative;
-}
-
-.point{
-    position:absolute;
-    top:35px;
-    left:190px;
-    font-size: 10px;
-}
-
-#Amiens{
-    padding:5px;
-    border: 4px solid #045a94;
-    border-radius: 10%;
-    background: radial-gradient(#045a94, #484848)
-}
-
-#contact{
-    background-color: #000000;
-    position:relative;
-    bottom:0;
-}
-
-
-
-/* Début média query pour écran desktop */
-@media (min-width: 992px) {
-
-    #cvtitle{
-        position: absolute;
-        z-index:2;
-        margin-bottom: 0;
-        padding-right: 20%;
-
-    }
-
-    #photo_triathlon{
-        margin-top: 60px;
-    }
-
-    #about{
-        position: relative;
-    }
-
-    #photomoi{
-        position:relative;
-        z-index:3;
-    }
-
-    #textabout{
-        margin-top: 20px;
-
-    }
-
-    .point{
-        position:absolute;
-        top:65px;
-        left:320px;
-        /* font-size: 10px; */
-    }
-
-    #contact{
-       position:fixed;
-        bottom:10px;
-        right:0;
-    }
+/*fond d'écran placé pour mobile*/
+body{
+    background-color:#010101;
     
+    background-image: url(../img/backgroundPages.jpg);
+    background-repeat: no-repeat;
+    /*dimension en pixel*/
+    background-size: 1218px 812px; 
+    /* background-size: 324vw; */
+    /*coordonée fixes */
+    /* background-position: -234px 152px;  */
+    background-position: 27% -19%;
 }
 
-/* Fin de la média query pour écran desktop */
+@media (min-width:768px){
+    body{
+        background-size:1986px 1324px;
+        background-position:24% -2%;
+    }
+}
+
+@media (min-width: 992px){
+    body{
+        background-position: 18% 13%;
+    }
+}
+
+@media (min-width: 1200px){
+    body{
+        background-position: 30vw -0.03vh;
+    }
+}
