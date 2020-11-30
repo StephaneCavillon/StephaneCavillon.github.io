@@ -1,0 +1,68 @@
+/*fond d'écran placé pour mobile*/
+body{
+    background-color:#010101;
+    background-image: url(../img/backgroundPages.jpg);
+    background-repeat: no-repeat;
+    /*dimension en pixel*/
+    background-size: 1218px 812px; 
+    /*coordonée fixes */
+    background-position: 27% -19%;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color:white;
+}
+
+/*suppression des décorations sur les liens du header*/
+#header a{
+    text-decoration: none;
+    color:white;
+}
+
+#header a:hover{
+    text-decoration: none;
+}
+
+/*soulignement des span et active*/
+span, .active {
+    color:white;
+    border-bottom: solid 2px #00D2FE;
+}
+
+/*position du bloc header en mobile*/
+header{
+    position:relative;
+    top:20vh;
+    transition: ease-in-out 0.3s;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight:600;
+}
+
+h2{
+    color:#8a8888;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/*taille et couleur de fonds des icones de lien sociaux*/
+#socialLink a{
+    font-size:18px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+}
+
+#socialLink a:hover{
+    background: #00D2FE;
+    color:white;
+}
+
+
+

@@ -1,0 +1,13 @@
+/*positionnement tablette paysage*/
+body{
+    background-position: 18% 13%;
+}
+
+/*position du bloc header en tablette portrait*/
+header{
+    top:15vh;
+    right:25vw;
+}
+
+
+
