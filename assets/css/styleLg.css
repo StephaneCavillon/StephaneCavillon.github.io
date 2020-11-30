@@ -1,4 +1,4 @@
-/*positionnement tablette paysage*/
+/*positionnement tablette paysage entre 992px et 1200px */
 body{
     background-position: 18% 13%;
 }
@@ -8,6 +8,45 @@ header{
     top:15vh;
     right:25vw;
 }
+
+nav a{
+    color:#8a8888;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.active{
+    color:white;
+}
+
+.active:after{
+    visibility:visible;
+    width:30px;
+}
+
+
+/*barre en dessous des items de la navbar qui se dévoile sur le hover*/
+nav a::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #00D2FE;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+    
+nav a:hover:after{
+    visibility: visible;
+    width:30px;
+}
+
 
 
 

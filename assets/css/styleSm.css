@@ -1,4 +1,4 @@
-/*fond d'écran placé pour mobile*/
+/*fond d'écran placé pour mobile jusqu'à 768px */
 body{
     background-color:#010101;
     background-image: url(../img/backgroundPages.jpg);
@@ -17,17 +17,17 @@ body{
 }
 
 /*suppression des décorations sur les liens du header*/
-#header a{
+header a{
     text-decoration: none;
     color:white;
 }
 
-#header a:hover{
+header a:hover{
     text-decoration: none;
 }
 
 /*soulignement des span et active*/
-span, .active {
+span{
     color:white;
     border-bottom: solid 2px #00D2FE;
 }
@@ -51,6 +51,7 @@ h2{
     font-weight: 500;
     line-height: 1.5;
 }
+
 
 /*taille et couleur de fonds des icones de lien sociaux*/
 #socialLink a{

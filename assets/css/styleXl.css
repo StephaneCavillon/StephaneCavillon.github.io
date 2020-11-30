@@ -1,7 +1,8 @@
-/* positionnement desktop */
+/* positionnement desktop supérieur à 1200px*/
 body{
-    background-position: 12vw -0.03vh;
+    background-position: 12vw -0.5vh;
 }
 
 header{
+    right:0;
 }
