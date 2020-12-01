@@ -26,7 +26,6 @@ nav a:hover{
     width:30px;
 }
 
-
 /*barre en dessous des items de la navbar qui se dévoile sur le hover*/
 nav a::after{
     display:block;
