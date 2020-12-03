@@ -8,8 +8,8 @@ body{
     background-size: 1218px 812px; 
     /*coordonée fixes */
     background-position: 27% -19%;
+    /* overflow:hidden; */
 }
-
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -64,7 +64,7 @@ h3{
     font-size:18px;
     border-radius: 50%;
     background: rgba(255,255,255,0.1);
-    /*on définit une taille foxe de block pour avoir des logos rond*/
+    /*on définit une taille fixe de block pour avoir des logos rond*/
     height:43px;
     width:45px;
 }
@@ -92,5 +92,26 @@ h3{
 
 .bg-grey{
     background-color:#424143;
+}
+
+.bg-light li{
+    list-style-type: none;
+}
+
+/* couleur des icones d'interet */
+.darkBleu{
+    color:#0D57FF;
+}
+
+.rouge{
+    color:#FF4119;
+}
+
+.jaune{
+    color:#FFD119;
+}
+
+.vert{
+    color:#0DFF5E;
 }
 
