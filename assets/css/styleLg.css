@@ -9,6 +9,7 @@ header{
     right:25vw;
 }
 
+/*couleur des liens de la nav*/
 nav a{
     color:#8a8888;
 }
@@ -17,6 +18,7 @@ nav a:hover{
     color:white;
 }
 
+/*mise en page de l'element actif*/
 .active{
     color:white;
 }

@@ -1,5 +1,9 @@
 /* positionement tablette portrait entre 768px et 992px*/
 body{
-    background-size:1986px 1324px;
+    background-size:inherit;
     background-position:24% -2%;
+}
+
+header{
+    left:10vw;
 }
