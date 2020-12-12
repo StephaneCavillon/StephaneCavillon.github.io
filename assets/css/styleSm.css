@@ -1,9 +1,10 @@
 /*fond d'écran placé pour mobile jusqu'à 768px */
 body{
-    position:absolute;
+    /* position:absolute; */
     background-color:#010101;
     background-image: url(../img/backgroundPages.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     /*dimension en pixel*/
     background-size: 1218px 812px; 
     /*coordonée fixes */
@@ -34,10 +35,14 @@ header a:hover{
     border-bottom: solid 2px #00D2FE;
 }
 
+.navbar-dark{
+    background-color:#010101;
+}
+
 /*position du bloc header en mobile*/
 header{
     position:relative;
-    top:12vh;
+    top:25vh;
     transition: ease-in-out 0.3s;
 }
 
@@ -57,7 +62,6 @@ h2{
 h3{
     color:#00D2FE;
 }
-
 
 /*taille et couleur de fonds des icones de lien sociaux*/
 #socialLink a{
@@ -115,3 +119,9 @@ h3{
     color:#0DFF5E;
 }
 
+/*Position du bloc main*/
+main{
+    position:relative;
+    top:100vh;
+
+}
