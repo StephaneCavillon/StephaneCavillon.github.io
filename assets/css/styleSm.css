@@ -36,7 +36,7 @@ header a:hover{
 }
 
 .navbar-dark{
-    background-color:#010101;
+    background-color: rgba(1,1,1,0.8);
 }
 
 /*position du bloc header en mobile*/
@@ -84,6 +84,15 @@ h3{
     color:#00D2FE;
 }
 
+/* paramètrage des background des différentes sections */
+.bg-black{
+    background-color:rgba(0,0,0,0.8);
+}
+
+.bg-lightblack{
+    background-color: rgba(255,255,255,0.1);
+}
+
 /*couleur pour les icones des compétences*/
 .bleu{
     color:#00D2FE;
@@ -96,10 +105,6 @@ h3{
 
 .bg-grey{
     background-color:#424143;
-}
-
-.bg-light li{
-    list-style-type: none;
 }
 
 /* couleur des icones d'interet */
@@ -123,5 +128,29 @@ h3{
 main{
     position:relative;
     top:100vh;
-
 }
+
+
+
+
+
+/* Mise en forme des lignes de la zone compétence */
+#skills li{
+    padding-bottom:2%;
+    list-style-type: none;
+}
+
+/*pour enlever le retrait des li dans les compétences */
+#skills ul{
+    padding:0;
+}
+/* rotation à 180° des barres de progress de languages en petit écran */
+.rotate{
+    transform:rotate(180deg); 
+    -ms-transform:rotate(180deg); /* IE 9 */ 
+    -moz-transform:rotate(180deg); /* Firefox */ 
+    -webkit-transform:rotate(180deg); /* Safari and Chrome */ 
+    -o-transform:rotate(180deg); /* Opera */ 
+}
+
+

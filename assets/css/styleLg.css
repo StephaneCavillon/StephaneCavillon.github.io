@@ -54,6 +54,15 @@ nav ul a:hover:after{
     width:30px;
 }
 
+/* suppression de la rotation des progress barre de language */
+.rotate{
+    transform:rotate(0deg); 
+    -ms-transform:rotate(0deg); /* IE 9 */ 
+    -moz-transform:rotate(0deg); /* Firefox */ 
+    -webkit-transform:rotate(0deg); /* Safari and Chrome */ 
+    -o-transform:rotate(0deg); /* Opera */ 
+
+}
 
 
 
