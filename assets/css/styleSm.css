@@ -153,4 +153,8 @@ main{
     -o-transform:rotate(180deg); /* Opera */ 
 }
 
+/* ajout de padding sur les sections pour passer en dessous de la navbar*/
+section{
+    padding-top: 50px !important;
+}
 
