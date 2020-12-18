@@ -87,10 +87,13 @@ h3{
 /* paramètrage des background des différentes sections */
 .bg-black{
     background-color:rgba(0,0,0,0.8);
+    /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
+    backdrop-filter: blur(7px);
 }
 
 .bg-lightblack{
     background-color: rgba(255,255,255,0.1);
+    
 }
 
 /*couleur pour les icones des compétences*/
