@@ -7,3 +7,8 @@ body{
 /* header{
     left:10vw;
 } */
+
+.bg-black{
+    /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
+    backdrop-filter: blur(8px);
+}

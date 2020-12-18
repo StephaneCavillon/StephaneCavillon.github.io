@@ -88,7 +88,7 @@ h3{
 .bg-black{
     background-color:rgba(0,0,0,0.8);
     /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(6px);
 }
 
 .bg-lightblack{
