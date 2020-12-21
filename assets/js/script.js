@@ -15,3 +15,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+// collapse du menu mobile lorsque l'on clique sur les liens
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault;
+
+        document.querySelector('#navbarmobile').classList.remove( 'show');
+    })
+})
