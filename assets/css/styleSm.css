@@ -35,6 +35,10 @@ header a:hover{
     border-bottom: solid 2px #00D2FE;
 }
 
+.navbar-brand{
+    font-weight:bolder;
+}
+
 .navbar-dark{
     background-color: rgba(1,1,1,0.8);
 }
@@ -160,4 +164,17 @@ main{
 section{
     padding-top: 50px !important;
 }
+
+.invisible{
+    visibility: hidden;
+    transition:all ease-in 0.2s;
+
+}
+
+.visible{
+    visibility:visible;
+    transition:all ease-in-out 0.2s;
+
+}
+
 
