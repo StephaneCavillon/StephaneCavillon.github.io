@@ -1,14 +1,17 @@
 var navbartop = document.querySelector('.navbar');
 var navbarbrand = document.querySelector('.navbar-brand');
 var header = document.querySelector('#header');
-var navbar_a = document.querySelectorAll('a[href^="#"]');
+var navbar_a = document.querySelectorAll('.navbar a[href^="#"]');
 var aboutsection = document.querySelector('#about');
+var section = document.querySelectorAll('section');
+
+console.log(section);
 
 // scroll doux et decalage ne pas avoir le titre sous la navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
         });
@@ -70,29 +73,27 @@ if(window.matchMedia("(min-width: 992px)").matches){
         }else{
             console.log('scrollY avant :' + scrollY)
             $(".navbar-brand").fadeOut(100);
-            // $(".navbar-toggler").on("click", function(){
-            //     $(".navbar-brand").fadeToggle(100);
-            // })
-    
         }
     })
 }
 //************************************************************* */
 
 // changement de la classe active lors du défilement
-//pour la section about
 window.addEventListener('scroll', function (){
-    if(scrollY > (aboutsection.offsetTop + (window.innerHeight /3))){
-        console.log('affichage menu')
+    section.forEach( item =>{
+    if(scrollY > (item.offsetTop + (window.innerHeight /3)) && scrollY <= (item.offsetTop + item.clientHeight + (window.innerHeight/3))){
+        // console.log(item.getAttribute('id'));
+        // console.log('item.offsetTop :' + item.offsetTop);
+        // console.log('item.clientHeight :' + item.clientHeight);
     
         //d'abord on supprime la classe active sur tous
         navbar_a.forEach(anchor => {
             anchor.classList.remove('active');
         })
-
-        // on met ensuite la classe active sur l'element about
-
+        
+        // on met ensuite la classe active sur le lien qui a l'id = link-(id de l'item selectionné)
+        document.querySelector('.navbar #link-' + item.getAttribute('id')).classList.add('active');
     }
 });
-
+});
 
