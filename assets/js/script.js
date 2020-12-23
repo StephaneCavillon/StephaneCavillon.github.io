@@ -50,6 +50,10 @@ if(window.matchMedia("(min-width: 992px)").matches){
         navbartop.removeAttribute('style','display: none');
     });
 
+    $(".navbar-toggler").on("click", function(){
+        $(".navbar-brand").fadeToggle(100);
+    })
+
    
     $(window).on("scroll",function(){
 // utilisation de Jquery pour cacher le navbar-brand
