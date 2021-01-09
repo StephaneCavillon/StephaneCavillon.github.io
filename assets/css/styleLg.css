@@ -26,7 +26,7 @@ nav ul a:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover{
 
 /*mise en page de l'element actif*/
 .active, .navbar.navbar-dark .navbar-nav .nav-item .nav-link.active{
-    color:white;
+    color:white !important;
 }
 
 .active:after{

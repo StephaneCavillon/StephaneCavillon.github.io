@@ -82,9 +82,6 @@ if(window.matchMedia("(min-width: 992px)").matches){
 window.addEventListener('scroll', function (){
     section.forEach( item =>{
     if(scrollY > (item.offsetTop + (window.innerHeight /3)) && scrollY <= (item.offsetTop + item.clientHeight + (window.innerHeight/3))){
-        // console.log(item.getAttribute('id'));
-        // console.log('item.offsetTop :' + item.offsetTop);
-        // console.log('item.clientHeight :' + item.clientHeight);
     
         //d'abord on supprime la classe active sur tous
         navbar_a.forEach(anchor => {

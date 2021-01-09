@@ -61,6 +61,18 @@ h2{
     font-size:20px;
     font-weight: 500;
     line-height: 1.5;
+
+}
+
+section h2:after{
+    content:"";
+    width:100px;
+    height: 1px;
+    display: inline-block;
+    background:#00D2FE;
+    margin-bottom: 4px;
+    margin-left: 10px;
+
 }
 
 h3{
@@ -175,6 +187,10 @@ section{
     visibility:visible;
     transition:all ease-in-out 0.2s;
 
+}
+
+.active{
+    color:#00D2FE !important;
 }
 
 
