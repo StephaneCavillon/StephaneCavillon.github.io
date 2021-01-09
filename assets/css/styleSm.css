@@ -50,6 +50,23 @@ header{
     transition: ease-in-out 0.3s;
 }
 
+.invisible{
+    visibility: hidden;
+    transition:all ease-in 0.2s;
+
+}
+
+.visible{
+    visibility:visible;
+    transition:all ease-in-out 0.2s;
+
+}
+
+/* couleur du lien dans la navbar collapse mobile */
+.active{
+    color:#00D2FE !important;
+}
+
 h1{
     font-family: "Poppins", sans-serif;
     font-size: 28px;
@@ -79,6 +96,11 @@ h3{
     color:#00D2FE;
 }
 
+h4{
+    font-family: "Raleway", sans-serif;
+    color:#8a8888;
+}
+
 /*taille et couleur de fonds des icones de lien sociaux*/
 #socialLink a{
     font-size:18px;
@@ -94,9 +116,11 @@ h3{
     color:white;
 }
 
+
 /*mise en forme des marker de liste dans la description*/
 #description li::marker{
-    content:">";
+    /* \0020 fait un espace, ne marche pas sur FF */
+    content:"> \0020";
     color:#00D2FE;
 }
 
@@ -177,20 +201,13 @@ section{
     padding-top: 50px !important;
 }
 
-.invisible{
-    visibility: hidden;
-    transition:all ease-in 0.2s;
-
+/* taille des icones dans la section contact */
+#contact i{
+    font-size:20px;
+    margin-top: 10px;
 }
 
-.visible{
-    visibility:visible;
-    transition:all ease-in-out 0.2s;
-
+#contact a:hover{
+    text-decoration: none;
+    color:#00D2FE;
 }
-
-.active{
-    color:#00D2FE !important;
-}
-
-
