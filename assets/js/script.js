@@ -5,7 +5,7 @@ var navbar_a = document.querySelectorAll('.navbar a[href^="#"]');
 var aboutsection = document.querySelector('#about');
 var section = document.querySelectorAll('section');
 
-console.log(section);
+// console.log(section);
 
 // scroll doux et decalage ne pas avoir le titre sous la navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -67,11 +67,11 @@ if(window.matchMedia("(min-width: 992px)").matches){
     $(window).on("scroll",function(){
 // utilisation de Jquery pour cacher le navbar-brand
         if(scrollY > headerBottomPosition){
-            console.log('scrollY :' + scrollY);
+            // console.log('scrollY :' + scrollY);
 
             $(".navbar-brand").fadeIn(200);
         }else{
-            console.log('scrollY avant :' + scrollY)
+            // console.log('scrollY avant :' + scrollY)
             $(".navbar-brand").fadeOut(100);
         }
     })

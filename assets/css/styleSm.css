@@ -141,6 +141,10 @@ h4{
     color:#00D2FE;
 }
 
+.redLight{
+    color:#F09E1A;
+}
+
 /*Couleur de fond des progress bar*/
 .bg-blue{
     background-color:#00D2FE;
@@ -148,6 +152,10 @@ h4{
 
 .bg-grey{
     background-color:#424143;
+}
+
+.bg-orange{
+    background-color: #F09E1A;
 }
 
 /* couleur des icones d'interet */
